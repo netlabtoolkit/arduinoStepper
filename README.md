@@ -8,9 +8,10 @@ This Arduino sketch drives multiple stepper motors via serial commands using the
 * Speed and acceleration/deceleration
 * Uses the [AccelStepper library](http://www.airspayce.com/mikem/arduino/AccelStepper/)
 
-
 Receive serial command to move a stepper motor
 ----------------------------
+**Note: Serial commands sent to the Arduino must be terminated by a linefeed - \n**
+
 Serial input to Arduino
 
 	stepperID steps speed acceleration
