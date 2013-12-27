@@ -117,9 +117,7 @@ void loop() {
       stepperRunning[i] = false;
     }
   }
-}
-
-void serialEvent() {
+  
   if (Serial.available() > 0) {
     // get the parameters in the form: stepperID locationToMoveTo speed acceleration
     // e.g. 1 200 300 300 requests that the second motor moves to position 200 with a max speed of 300, and acceleration of 300
